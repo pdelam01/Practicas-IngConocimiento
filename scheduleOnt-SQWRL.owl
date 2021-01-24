@@ -1,0 +1,830 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#"
+     xml:base="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:temporal="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasFinishProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasFinishProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasSubProcess"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isFinishProcessOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasLongestProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasLongestProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasSubProcess"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isLongestProcessOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasNextProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasNextProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasSubsequentProcess"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isNextProcessOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasStartProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasStartProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasSubProcess"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isStartProcessOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasSubProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasSubProcess">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isSubProcessOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Process"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasSubsequentProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasSubsequentProcess">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isSubequentProcessOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Process"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isFinishProcessOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isFinishProcessOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isSubProcessOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isLongestProcessOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isLongestProcessOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isSubProcessOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isNextProcessOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isNextProcessOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isSubequentProcessOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isStartProcessOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isStartProcessOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isSubProcessOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isSubProcessOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isSubProcessOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isSubequentProcessOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#isSubequentProcessOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#durationFromStart -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#durationFromStart">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#durationInWorkHours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#durationInWorkHours">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#slack -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#slack">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#AgileDomain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#AgileDomain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#BehindScheduleProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#BehindScheduleProcess">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Process"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#slack"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Iteration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Iteration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#AgileDomain"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#ParallelProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#ParallelProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#ProcessDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#ProcessDomain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#ProcessDomain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#SequentialProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#SequentialProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#AgileDomain"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#BuildStoryCreateCase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#BuildStoryCreateCase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Task"/>
+        <durationInWorkHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.0</durationInWorkHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#BuildStoryLogin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#BuildStoryLogin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Task"/>
+        <hasNextProcess rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#BuildStoryCreateCase"/>
+        <durationInWorkHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.0</durationInWorkHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#InstallDevelopmentEnvironment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#InstallDevelopmentEnvironment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Task"/>
+        <hasNextProcess rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#BuildStoryLogin"/>
+        <durationInWorkHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</durationInWorkHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Iteration1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Iteration1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Iteration"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#SequentialProcess"/>
+        <hasFinishProcess rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#BuildStoryCreateCase"/>
+        <hasStartProcess rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#InstallDevelopmentEnvironment"/>
+        <hasSubProcess rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#BuildStoryLogin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Iteration2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Iteration2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Iteration"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#ParallelProcess"/>
+        <hasLongestProcess rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#WriteStoryPerformanceReview"/>
+        <hasSubProcess rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#WriteStoryEscalateCase"/>
+        <hasSubProcess rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#WriteStoryPerformanceReview"/>
+        <hasSubProcess rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#WriteStorySearch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#WriteStoryEscalateCase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#WriteStoryEscalateCase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Task"/>
+        <durationFromStart rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</durationFromStart>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#WriteStoryPerformanceReview -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#WriteStoryPerformanceReview">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Task"/>
+        <durationFromStart rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42.0</durationFromStart>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#WriteStorySearch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#WriteStorySearch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Task"/>
+        <durationFromStart rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</durationFromStart>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#id">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#pp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#lp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#fp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#td">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#sp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#stp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#spd">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#np">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#npd">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#nptd">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#ptd">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#ParallelProcess"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#pp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasLongestProcess"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#pp"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#lp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasFinishProcess"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#pp"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#lp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Process"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasFinishProcess"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#fp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#durationFromStart"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#fp"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#td"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#durationInWorkHours"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#td"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#SequentialProcess"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#sp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#durationInWorkHours"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#stp"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#spd"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasStartProcess"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#sp"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#stp"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#durationFromStart"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#stp"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#spd"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasNextProcess"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#np"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#durationInWorkHours"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#np"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#npd"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#add"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#nptd"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#ptd"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#npd"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#durationFromStart"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#p"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#ptd"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#durationFromStart"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#np"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#nptd"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Debug for S2</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#hasNextProcess"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#np"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#durationInWorkHours"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#np"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#npd"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#add"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#nptd"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#ptd"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#npd"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#durationFromStart"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#p"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#ptd"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#p"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#np"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#nptd"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To compute the slack:  the difference between the estimated length of a process and the deadline for that process.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#Iteration"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#durationInWorkHours"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#i"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#id"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#subtract"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#s"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.0</rdf:first>
+                                                        <rdf:rest rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#id"/>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#slack"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#i"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mdebellis/ontologies/2017/4/untitled-ontology-122#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
