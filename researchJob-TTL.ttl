@@ -1,0 +1,36 @@
+@prefix ns0: <http://example.org#> .
+@prefix e: <http://jyu.fi/employment#> .
+@prefix j: <http://jyu.fi/jobs#> .
+@prefix l: <http://www.w3.org/2000/10/swap/log#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns0:bill 
+  ns0:age "30"^^xsd:int ;
+  ns0:firstName "Bill" ;
+  ns0:surName "Boul" ;
+  ns0:loves ns0:jane ;
+  ns0:workAs j:professor .
+
+ns0:jane
+  ns0:age "26"^^xsd:int;
+  ns0:firstName "Jane" ;
+  ns0:surName "Joli" ;
+  ns0:workAs j:juniorResearcher .
+
+ns0:john
+  ns0:age "25"^^xsd:int;
+  ns0:firstName "John" ;
+  ns0:surName "More" ;
+  ns0:hasFriend ns0:bill ;
+  ns0:loves ns0:mary ;
+  ns0:workAs j:teacher .
+
+ns0:mary
+  ns0:age "24"^^xsd:int;
+  ns0:firstName "Mary" ;
+  ns0:surName "Popens" ;
+  ns0:workAs j:seniorresearcher .
+  
+j:ResearchJob a j:juniorResearcher , j:seniorResearcher .
+j:EducationJob a j:teacher, j:professor .
